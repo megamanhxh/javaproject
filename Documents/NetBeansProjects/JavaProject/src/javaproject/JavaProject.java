@@ -147,7 +147,7 @@ public class JavaProject {
             System.out.print(" done!");
             
             //print the number of Data that has been loaded from DSV file sucessfully
-            System.out.println("\n\nThe application has loaded " + counter + " computer data.");
+            System.out.println("\n\nThe application has loaded " + counter + " computer data.\n");
         }
         
         //prompt to user to enter his username
