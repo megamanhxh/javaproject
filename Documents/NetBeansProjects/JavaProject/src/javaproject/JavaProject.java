@@ -139,17 +139,17 @@ public class JavaProject {
 
                 //loading progress
                 System.out.print(".");
-                
+
                 //counter for the number of lines
                 counter++;
             }
             //loading progress completed
             System.out.print(" done!");
-            
+
             //print the number of Data that has been loaded from DSV file sucessfully
             System.out.println("\n\nThe application has loaded " + counter + " computer data.\n");
         }
-        
+
         //prompt to user to enter his username
         System.out.println("Please enter your username ID:");
 
@@ -167,8 +167,26 @@ public class JavaProject {
         if (userName.equals(adminUserName)) {
             if (password.equals(adminPassword)) {
                 //showing admin menu
+                //creating variables
+                boolean exit = false;
+
                 menu(1);
                 chosenMenu = console.nextInt();
+
+                switch (chosenMenu) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    default:
+                        break;
+                }
             } else {
                 error(5);
             }
@@ -177,6 +195,17 @@ public class JavaProject {
                 //showing user menu
                 menu(0);
                 chosenMenu = console.nextInt();
+                switch (chosenMenu) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        break;
+                }
+
             } else {
                 error(5);
             }
@@ -186,7 +215,7 @@ public class JavaProject {
 
 
         // -=-=-=-=-=-=-=-=-= End Application =-=-=-=-=-=-=-=-=-
-    
+
     }
 
     public static void menu(int arg) {
